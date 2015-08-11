@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>饼图</title>
+    <style type="text/css">
+        .pie{
+            margin:100px auto;
+            width:10rem;
+            height:10rem;
+            border-radius: 50%;
+            background-color:yellowgreen;
+            background-image:linear-gradient(to right,transparent 50%,#655 0);
+        }
+        .pie::before{
+            content:'';
+            display:block;
+            background: #655;
+            margin-left:50%;
+            height:100%;
+            border-radius: 0 100% 100% 0 / 50%;
+            transform-origin: left;
+            transform: rotate(.3turn);
+        }
+        .niceWord{
+            -webkit-text-stroke: 2px red;
+            color:transparent;
+            font-size:70px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="pie"></div>
+
+<h1 class="niceWord">Hello world</h1>
+</body>
+</html>
